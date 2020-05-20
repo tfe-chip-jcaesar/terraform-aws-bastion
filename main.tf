@@ -1,6 +1,6 @@
 resource "aws_security_group" "bastionHost" {
-  name        = "bastionHost"
-  description = "bastionHost"
+  name        = "sg_${var.name}"
+  description = "Security Group for Bastion Host"
   vpc_id      = var.vpc_id
 
   ingress {
