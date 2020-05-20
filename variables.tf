@@ -4,7 +4,7 @@ variable "ami" {
 variable "common_tags" {}
 variable "name" {}
 variable "size" {
-  default "t2.small"
+  default = "t2.small"
 }
 variable "subnet_id" {}
 variable "ssh_key" {}
